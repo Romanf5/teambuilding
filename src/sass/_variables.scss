@@ -1,26 +1,37 @@
 //  Цвет
 
 $body-bg: #fff;
-$text-color: #333;
+$text-color: #fff;
+$decoration-color: #1da5ff;
+
+$slider-color: #e39ede;
+
+$header-color: #000;
+$darken-color: #000;
+
+$menu-item-color: rgba(255,255,255,0.35);
+$menu-item-color-hover: rgba(29, 165, 255, 1);
 
 // Цвет ссылки
 
-$link-color: #55b3f3;
+$link-color: #1da5ff;
 $link-color--hover: darken($link-color, 20%);
 
 //  Типографика
+$main-font: 'Podkova', serif;
+$title-font: 'Rubik', san-serif;
 
-$font-family: 'Roboto', Helvetica, Arial, sans-serif;
-// $font-family--helvetica: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-$font-size: 14px;
+$font-size: 18px;
 $font-weight: 400; // Regular
-$line-height: 1.2;
+$line-height: 1;
+
+$title-font-weight: 900;
 
 // Ширина контейнера
 
 $container-padding: 15px;
-$container-width: 1170px + $container-padding * 2;
+$container-width: 1885px + $container-padding * 2;
 
 //  Адаптивность и соответствующие ширины контейнера
 

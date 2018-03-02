@@ -1,20 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Page Title</title>
-	<meta name="description" content="">
-	@@include('_include/head.html')
+  <meta charset="utf-8">
+  <title>Home page</title>
+  <meta name="description" content="">
+  @@include('_include/head.html')
 </head>
 
 <body>
-	@@include('_include/header.html')
+@@include('_include/header.html')
 
-	<div class="page-container">
-		<h1>Hello world!</h1>
-	</div>
+<section class="banner">
 
-	@@include('_include/footer.html')
-	@@include('_include/inc_script.html')
+  <div class="slider-wrp">
+
+    <div class="banner-slider" id="banner-slider">
+
+      <div class="banner-slide">
+        <div class="flex-container flex-container--justify-beetvine">
+
+          <div class="banner-slide__img banner-slide__img--start-film">
+            <img src="images/start-film.png" alt="img1">
+          </div>
+
+          <div class="banner-slide__content">
+            <h1 class="banner-slide__title">
+              Teamwork som
+              I aldrig har prøvet det før
+            </h1>
+            <p class="banner-slide__description">
+              SKAB EN FILM SAMMEN – Ring på 86160044 og hør nærmere
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="banner-slide banner-slide--slide-2">
+        <div class="flex-container flex-container--justify-beetvine">
+
+          <div class="banner-slide__content">
+            <h1 class="banner-slide__title banner-slide__title--title-2">
+              Ready, set
+              and..
+              action!
+            </h1>
+            <p class="banner-slide__description banner-slide__description--description-2">
+              Slip din indre instruktør fri – 
+              ring 86160044 og hør nærmere
+            </p>
+          </div>
+
+          <div class="banner-slide__img banner-slide__img--chair">
+            <img src="images/chair.png" alt="img2">
+          </div>
+        </div>
+      </div>
+
+      <div class="banner-slide banner-slide--slide-3">
+        <div class="flex-container flex-container--justify-beetvine">
+
+          <div class="banner-slide__content banner-slide__content--content-3">
+            <h1 class="banner-slide__title">
+              Uforglemmelige
+              oplevelser med
+              dine kollegaer
+            </h1>
+            <p class="banner-slide__description banner-slide__description--description-3">
+              NU KAN DU OGSÅ VINDE EN OSCAR – Ring på 86160044 og hør nærmere
+            </p>
+          </div>
+
+          <div class="banner-slide__img banner-slide__img--oskar">
+            <img src="images/oskar.png" alt="img3">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+@@include('_include/footer.html')
+@@include('_include/inc_script.html')
 </body>
 </html>

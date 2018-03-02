@@ -1,3 +1,14 @@
 .page-header {
   position: relative;
+  padding-top: 38px;
+  padding-bottom: 36px;
+  background-color: $header-color;
+}
+
+
+.logo{
+  max-width: 266px;
+  >a{
+    display: inline-block;
+  }
 }

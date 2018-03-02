@@ -1,36 +1,76 @@
 //  Подключения шрифтов
 
-// font-family: 'Roboto';
+// font-family: 'Podkova';
+// font-weight: 400
 @font-face {
-  font-family: 'Roboto';
-  font-weight: normal;
-  src:  local('Roboto'), local('Roboto-Regular');
-  src:  url('../fonts/Roboto-Regular.eot');
-  src:  url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Roboto-Regular.woff2') format('woff2'),
-        url('../fonts/Roboto-Regular.woff') format('woff'),
-        url('../fonts/Roboto-Regular.ttf') format('truetype'),
-        url('../fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
+  font-family: 'Podkova';
+  font-weight: 400;
+  src:  local('Podkova'), local('Podkova-Regular');
+  src:  url('../fonts/Podkova-Regular.eot');
+  src:  url('../fonts/Podkova-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Podkova-Regular.woff') format('woff'),
+        url('../fonts/Podkova-Regular.ttf') format('truetype'),
+        url('../fonts/Podkova-Regular.svg#Podkova-Regular') format('svg');
 }
 
-// font-family: 'Roboto';
-// font-weight: 700;
+// font-family: 'Podkova';
+// font-weight: 700
 @font-face {
-  font-family: 'Roboto';
+  font-family: 'Podkova';
   font-weight: 700;
-  src:  local('Roboto'), local('Roboto-Bold');
-  src:  url('../fonts/Roboto-Bold.eot');
-  src:  url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Roboto-Bold.woff2') format('woff2'),
-        url('../fonts/Roboto-Bold.woff') format('woff'),
-        url('../fonts/Roboto-Bold.ttf') format('truetype'),
-        url('../fonts/Roboto-Bold.svg#Roboto-Bold') format('svg');
+  src:  local('Podkova'), local('Podkova-Bold');
+  src:  url('../fonts/Podkova-Bold.eot');
+  src:  url('../fonts/Podkova-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Podkova-Bold.woff') format('woff'),
+  url('../fonts/Podkova-Bold.ttf') format('truetype'),
+  url('../fonts/Podkova-Bold.svg#Podkova-Bold') format('svg');
+}
+
+// font-family: 'Rubik';
+// font-weight: 400
+@font-face {
+  font-family: 'Rubik';
+  font-weight: 400;
+  src:  local('Rubik'), local('Rubik-Regular');
+  src:  url('../fonts/Rubik-Regular.eot');
+  src:  url('../fonts/Rubik-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Rubik-Regular.woff') format('woff'),
+  url('../fonts/Rubik-Regular.ttf') format('truetype'),
+  url('../fonts/Rubik-Regular.svg#Rubik-Regular') format('svg');
+}
+
+// font-family: 'Rubik';
+// font-weight: 700
+@font-face {
+  font-family: 'Rubik';
+  font-weight: 700;
+  src:  local('Rubik'), local('Rubik-Bold');
+  src:  url('../fonts/Rubik-Bold.eot');
+  src:  url('../fonts/Rubik-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Rubik-Bold.woff') format('woff'),
+  url('../fonts/Rubik-Bold.ttf') format('truetype'),
+  url('../fonts/Rubik-Bold.svg#Rubik-Bold') format('svg');
+}
+
+// font-family: 'Rubik';
+// font-weight: 900
+@font-face {
+  font-family: 'Rubik';
+  font-weight: 900;
+  src:  local('Rubik'), local('Rubik-Black');
+  src:  url('../fonts/Rubik-Black.eot');
+  src:  url('../fonts/Rubik-Black.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Rubik-Black.woff') format('woff'),
+  url('../fonts/Rubik-Black.ttf') format('truetype'),
+  url('../fonts/Rubik-Black.svg#Rubik-Black') format('svg');
 }
 
 // Заголовки
 
 h1, h2, h3, h4, h5 {
-  font-family: $font-family;
+  font-family: $title-font;
+  font-weight: $title-font-weight;
+  text-transform: uppercase;
 }
 
 h1 {

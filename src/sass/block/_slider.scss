@@ -1,0 +1,124 @@
+.slider-wrp {
+  max-width: 1315px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  color: $darken-color;
+}
+
+.banner-slide {
+  width: 100%;
+
+  &__img {
+    &--start-film {
+      max-width: 520px;
+    }
+
+    &--oskar{
+      max-width: 540px;
+    }
+  }
+
+  &__content {
+    max-width: 665px;
+
+    &--content-3 {
+      max-width: 725px;
+    }
+  }
+
+  &__title {
+    font-size: 75px;
+    margin-bottom: 18px;
+
+    &--title-2 {
+      max-width: 453px;
+      margin-top: 113px;
+    }
+
+  }
+
+  &__description {
+    text-transform: uppercase;
+    font-size: 29px;
+    font-family: $title-font;
+    font-weight: 700;
+    max-width: 500px;
+    margin-top: 0;
+    line-height: 32.16px;
+
+    &--description-2 {
+      max-width: 530px;
+    }
+
+    &--description-3 {
+      max-width: 574px;
+    }
+  }
+
+  &--slide-2 {
+    max-width: 1205px;
+  }
+
+  &--slide-3 {
+    max-width: 1315px;
+  }
+}
+
+.banner{
+
+  .slick-list.draggable{
+    position: static;
+  }
+  .slick-slider {
+    position: static;
+  }
+
+  .slick-track{
+    position: static;
+  }
+
+  .slick-dots{
+    @include clearlist();
+    position: absolute;
+    left: 50%;
+    bottom: 45px;
+    transform: translateX(-50%);
+
+
+    >li{
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      background-color: $body-bg;
+      margin-right: 6px;
+      margin-left: 6px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: 0.5s;
+
+      &:last-of-type{
+        margin-right: 0;
+      }
+      &:first-of-type{
+        margin-left: 0;
+      }
+
+      &.slick-active{
+        background-color: $decoration-color;
+
+        &:hover{
+          background-color: $decoration-color;
+        }
+      }
+
+      &:hover{
+        background-color: darken($body-bg,15%);
+      }
+      > button{
+        display: none;
+      };
+    }
+
+  }
+}
