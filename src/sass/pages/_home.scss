@@ -4,3 +4,23 @@
   background-color: $slider-color;
   position: relative;
 }
+
+.intro-section{
+  margin-bottom: 45px;
+}
+
+.case-section{
+  padding: 45px 0;
+}
+
+.inner-content{
+  max-width:1065px;
+  margin-left: auto;
+}
+
+.recommendation-section{
+  padding-top: 165px;
+  padding-bottom: 255px;
+  background: #000 url("../images/poligon-1.png")no-repeat;
+  background-size: cover;
+}

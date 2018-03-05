@@ -68,6 +68,10 @@ section {
 
 .decoration-bg {
   background-color: $decoration-color;
+  
+  &--2{
+    background-color: #ebebeb;
+  }
 }
 
 .flex-container {
@@ -83,6 +87,10 @@ section {
   &--align-center{
     align-items: center;
   }
+
+  &--align-start{
+    align-items: flex-start;
+  }
 }
 
 .img-wrapper{
@@ -91,17 +99,35 @@ section {
 
 .title{
   color: $decoration-color;
-
+  margin-top: 0;
   &--sm{
     font-size: 18px;
-    margin-top: 0;
     margin-bottom: 20px;
   }
+
+  &--lg{
+    font-size: 33px;
+  }
+}
+
+.sub-title{
+  font-size: 18px;
 }
 
 .description{
   margin-top: 0;
   margin-bottom:20px;
+}
+
+.title-section{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 39px;
+}
+
+.darken-link{
+  color: $darken-color;
+  text-decoration: underline;
 }
 
 //Indents
@@ -111,4 +137,8 @@ section {
 
 .pb-35 {
   padding-bottom: 35px;
+}
+
+.mt-45{
+  margin-top: 45px;
 }
