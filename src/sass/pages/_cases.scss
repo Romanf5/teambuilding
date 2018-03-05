@@ -1,0 +1,27 @@
+.cases-row{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: -50px;
+  margin-right: -50px;
+}
+
+.case{
+  width: 33.33%;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 83px;
+  position: relative;
+
+  &:after {
+    content: '';
+    display: block;
+    left: 50px;
+    right: 50px;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: #020a10;
+    z-index: -1;
+  }
+}

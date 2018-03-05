@@ -23,6 +23,12 @@
     min-height: 245px;
   }
 
+  &--preview{
+    padding: 40px 35px 40px 43px;
+    min-height: 268px;
+    background: none;
+  }
+
   &__description {
     &--sm{
       margin-bottom: 0;
