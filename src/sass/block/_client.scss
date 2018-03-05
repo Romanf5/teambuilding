@@ -1,0 +1,19 @@
+.client-section{
+  background-color: $decoration-color;
+  padding-top: 77px;
+  padding-bottom: 124px;
+}
+
+.client{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  &__item{
+    width: 211px;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+}
