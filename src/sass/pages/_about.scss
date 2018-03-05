@@ -1,0 +1,21 @@
+.video-section{
+  padding-top: 300px;
+  padding-bottom: 120px;
+  background-color: #eaeaea;
+}
+
+.video-wrp{
+  max-width: 882px;
+  position: relative;
+}
+
+.video-sub-title{
+  font-size: 18px;
+  color:$darken-color;
+}
+
+.indent-top-wrp{
+  position: relative;
+  margin-top: -200px;
+  z-index: 10;
+}

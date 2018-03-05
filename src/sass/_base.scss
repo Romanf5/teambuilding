@@ -130,6 +130,22 @@ section {
   text-decoration: underline;
 }
 
+.banner-page{
+  padding-top: 70px;
+}
+
+.top-indent {
+  margin-top: -40px;
+  position: relative;
+  z-index: 15;
+}
+
+.inner-blocks{
+  max-width: 1010px;
+  display: flex;
+  justify-content: flex-end;
+}
+
 //Indents
 .pt-40 {
   padding-top: 40px;

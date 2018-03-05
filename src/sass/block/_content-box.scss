@@ -29,6 +29,18 @@
     background: none;
   }
 
+  &--indent-pages{
+    max-width: 617px;
+    padding: 45px;
+    margin-left: 40px;
+
+    h3{
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: none;
+    }
+  }
+
   &__description {
     &--sm{
       margin-bottom: 0;
