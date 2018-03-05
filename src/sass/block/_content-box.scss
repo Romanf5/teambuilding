@@ -1,0 +1,16 @@
+.content-box{
+  background-color: $content-box;
+  max-width: 662px;
+  padding: 55px;
+
+  &__link{
+    text-decoration: underline;
+  }
+
+  &--position{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+  }
+}

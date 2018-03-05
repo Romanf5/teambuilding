@@ -49,6 +49,14 @@ section {
   padding-right: $container-padding;
 }
 
+.container-content {
+  max-width: $container-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $container-padding;
+  padding-right: $container-padding;
+}
+
 .icon {
   display: inline-block;
 }
@@ -75,4 +83,32 @@ section {
   &--align-center{
     align-items: center;
   }
+}
+
+.img-wrapper{
+  position: relative;
+}
+
+.title{
+  color: $decoration-color;
+
+  &--sm{
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.description{
+  margin-top: 0;
+  margin-bottom:20px;
+}
+
+//Indents
+.pt-40 {
+  padding-top: 40px;
+}
+
+.pb-35 {
+  padding-bottom: 35px;
 }

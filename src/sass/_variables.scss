@@ -9,6 +9,8 @@ $slider-color: #e39ede;
 $header-color: #000;
 $darken-color: #000;
 
+$content-box: #020a10;
+
 $menu-item-color: rgba(255,255,255,0.35);
 $menu-item-color-hover: rgba(29, 165, 255, 1);
 
@@ -32,6 +34,7 @@ $title-font-weight: 900;
 
 $container-padding: 15px;
 $container-width: 1885px + $container-padding * 2;
+$container-content: 1190 + $container-padding * 2;
 
 //  Адаптивность и соответствующие ширины контейнера
 
