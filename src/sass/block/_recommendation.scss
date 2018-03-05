@@ -7,6 +7,7 @@
     display: inline-block;
     width: 60px;
     height: 60px;
+    background: url("../images/icon-white.png") no-repeat center;
 
     &--white{
       background: url("../images/icon-black.png") no-repeat center;
@@ -17,6 +18,10 @@
     font-size: 24px;
     line-height: 29.41px;
     margin-bottom: 20px;
+
+    &--all{
+      color: $darken-color;
+    }
   }
 
   &__author{
@@ -27,3 +32,5 @@
     text-transform: uppercase;
   }
 }
+
+

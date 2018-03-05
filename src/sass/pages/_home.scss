@@ -9,6 +9,7 @@
   margin-bottom: 45px;
 
   &--all{
+    margin-bottom: 60px;
     p{
       color: $darken-color;
       max-width: 575px;
@@ -38,4 +39,9 @@
   padding-bottom: 255px;
   background: #000 url("../images/poligon-1.png")no-repeat;
   background-size: cover;
+
+  &--all{
+    padding: 65px 0;
+    background: inherit;
+  }
 }
