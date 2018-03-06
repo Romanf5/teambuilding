@@ -108,6 +108,10 @@ section {
   &--lg{
     font-size: 33px;
   }
+
+  &--xl{
+    font-size: 50px;
+  }
 }
 
 .sub-title{
@@ -141,9 +145,15 @@ section {
 }
 
 .inner-blocks{
-  max-width: 1010px;
+  max-width: 1040px;
   display: flex;
   justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.link{
+  text-decoration: underline;
+  display: block;
 }
 
 //Indents

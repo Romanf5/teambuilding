@@ -1,0 +1,45 @@
+.films-row{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin-right: -13px;
+  margin-left: -13px;
+}
+
+.film{
+  width: 50%;
+  position: relative;
+  padding-left: 13px;
+  padding-right: 13px;
+  margin-bottom: 25px;
+
+  &:after{
+    content: '';
+    display: block;
+    background-color: #020a10;
+    position: absolute;
+    left: 13px;
+    right: 13px;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  &__video{
+    position:relative;
+    padding-bottom:56.25%;
+    //padding-top:30px;
+    height:0;
+    overflow:hidden;
+
+    iframe,
+    object,
+    embed{
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+    }
+  }
+}

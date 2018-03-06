@@ -29,6 +29,10 @@
     background: none;
   }
 
+  &--preview-video{
+    min-height: 193px;
+  }
+
   &--indent-pages{
     max-width: 617px;
     padding: 45px;
@@ -41,6 +45,10 @@
     }
   }
 
+  &--lg-pb{
+    padding-bottom: 240px;
+  }
+
   &__description {
     &--sm{
       margin-bottom: 0;
@@ -48,5 +56,156 @@
         margin-bottom: 0;
       }
     }
+  }
+}
+
+.contact-information {
+  .site{
+    max-width: 220px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+  }
+}
+
+.team{
+  margin-top: 83px;
+
+  figure{
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  figcaption{
+    margin-top: 28px;
+
+    p{
+      margin: 0;
+    }
+    .name{
+      text-transform: uppercase;
+      margin: 0;
+    }
+  }
+
+  &__man{
+    max-width: 240px;
+  }
+}
+
+.sub-title{
+  font-family: $main-font;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: none;
+}
+
+
+.single-case-link {
+  margin-top: 40px;
+
+  >a{
+    text-transform: uppercase;
+    display: block;
+    text-decoration: underline;
+  }
+}
+
+.additional{
+  max-width: 355px;
+  width: 100%;
+  background-color: $decoration-color;
+  padding-top: 45px;
+  padding-right: 30px;
+  padding-left: 25px;
+  min-height: 837px;
+  font-style: normal;
+
+  >p{
+    font-weight: 700;
+    color: $darken-color;
+
+
+    >a{
+      word-break:break-all;
+      color: $darken-color;
+    }
+  }
+
+  &__title{
+    font-family: $main-font;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $darken-color;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  dl{
+    margin: 0;
+    dt{
+      color: $darken-color;
+      font-weight: 700;
+    }
+    dd{
+      margin: 0;
+      margin-bottom: 25px;
+      line-height: 20px;
+    }
+  }
+
+  .address-list{
+    @include clearlist;
+
+    li{
+      font-weight: 700;
+      text-transform: uppercase;
+      >span{
+        color: #000000;
+      }
+    }
+  }
+
+  &--sm{
+    min-height: 302px;
+  }
+
+}
+
+.single-box{
+  margin-top: -85px;
+  padding-bottom: 65px;
+
+  .inner-blocks{
+    display: block;
+  }
+}
+
+.single-box-content{
+  padding: 45px 69px 120px 45px;
+  max-width: 612px;
+  background-color: #bfbfbf;
+  margin-left: auto;
+
+  .icon-q{
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: url('../images/icon-q.png')no-repeat center;
+    margin-bottom: 45px;
+  }
+
+  p{
+    color: black;
+  }
+
+  address{
+    margin-top: 30px;
+    max-width: 340px;
+    font-family: $title-font;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+    font-style: normal;
   }
 }

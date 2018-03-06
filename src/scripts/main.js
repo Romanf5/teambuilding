@@ -3,6 +3,7 @@ $(document).ready(function () {
   var bannerSlider = $('#banner-slider');
   var caseSlider = $('#js-case-slider');
   var header = $('.page-header');
+  var rSlider = $('#recommendation-slider');
 
   init();
 
@@ -22,6 +23,15 @@ $(document).ready(function () {
       dots: true,
       arrows: false,
       dotsClass: 'custom-dots',
+    });
+    rSlider.slick({
+      autoplay: true,
+      arrows: false,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear',
+      pauseOnHover: true,
     });
     $(window).on('scroll', function () {
       stickyHandler(header, 0);
