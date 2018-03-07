@@ -18,6 +18,10 @@ body {
   font-weight: $font-weight;
   font-size: $font-size;
   line-height: $line-height;
+
+  @include max-w($screen-xl){
+    font-size: 15px;
+  }
 }
 
 a {
@@ -55,6 +59,16 @@ section {
   margin-right: auto;
   padding-left: $container-padding;
   padding-right: $container-padding;
+
+  @include max-w($screen-md){
+    max-width: 100%;
+  }
+
+  &--no-padding{
+    @include max-w($screen-md) {
+      padding: 0;
+    }
+  }
 }
 
 .icon {
@@ -95,6 +109,16 @@ section {
 
 .img-wrapper{
   position: relative;
+
+  &--man{
+    @include max-w($screen-xl){
+      max-width: 200px;
+    }
+
+    @include max-w($screen-md){
+      margin: 0 auto;
+    }
+  }
 }
 
 .title{
@@ -107,10 +131,21 @@ section {
 
   &--lg{
     font-size: 33px;
+
+    @include max-w($screen-xl) {
+      font-size: 22px;
+    }
+
+    @include max-w($screen-sm) {
+      font-size: 18px;
+    }
   }
 
   &--xl{
     font-size: 50px;
+    @include max-w($screen-lg){
+      font-size: 25px;
+    }
   }
 }
 
@@ -127,6 +162,14 @@ section {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 39px;
+
+  @include max-w($screen-xl){
+    font-size: 35px;
+  }
+
+  @include max-w($screen-md){
+    font-size: 25px;
+  }
 }
 
 .darken-link{
@@ -136,12 +179,20 @@ section {
 
 .banner-page{
   padding-top: 70px;
+
+  @include max-w($screen-md){
+    padding-top: 30px;
+  }
 }
 
 .top-indent {
   margin-top: -40px;
   position: relative;
   z-index: 15;
+
+  @include max-w($screen-md){
+    margin-top: 0;
+  }
 }
 
 .inner-blocks{
@@ -149,11 +200,26 @@ section {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
+
+  @include max-w($screen-md){
+    display: block;
+  }
 }
 
 .link{
   text-decoration: underline;
   display: block;
+}
+
+.control-width{
+
+}
+.banner-mobile{
+
+  @include max-w($screen-md){
+    display: block;
+  }
+
 }
 
 //Indents
@@ -163,10 +229,18 @@ section {
 
 .pb-35 {
   padding-bottom: 35px;
+
+  @include max-w($screen-md){
+    padding: 0;
+  }
 }
 
 .mt-45{
   margin-top: 45px;
+
+  @include max-w($screen-md){
+    margin: 0 auto;
+  }
 }
 
 //JS

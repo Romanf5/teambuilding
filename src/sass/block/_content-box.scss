@@ -3,6 +3,19 @@
   max-width: 662px;
   padding: 55px;
 
+  @include max-w($screen-xl){
+    padding: 35px;
+  }
+
+  @include max-w($screen-lg){
+    max-width: 495px;
+    padding: 25px;
+  }
+
+  @include max-w($screen-md) {
+    max-width: 100%;
+  }
+
   &__link {
     text-decoration: underline;
   }
@@ -12,6 +25,11 @@
     width: 100%;
     bottom: 0;
     right: 0;
+
+    @include max-w($screen-md){
+      position: static;
+      max-width: 100%;
+    }
   }
 
   &--slider {
@@ -21,6 +39,13 @@
     left: 0;
     top: 165px;
     min-height: 245px;
+
+    @include max-w($screen-md) {
+      position: static;
+      max-width: 100%;
+      padding: 20px;
+      min-height: 156px;
+    }
   }
 
   &--preview{
@@ -38,6 +63,16 @@
     padding: 45px;
     margin-left: 40px;
 
+    @include max-w($screen-lg){
+      padding: 25px;
+      margin-left: 20px;
+    }
+
+    @include max-w($screen-md){
+      max-width: 100%;
+      margin-left: 0;
+    }
+
     h3{
       font-size: 20px;
       font-weight: 700;
@@ -47,6 +82,10 @@
 
   &--lg-pb{
     padding-bottom: 240px;
+
+    @include max-w($screen-md){
+      padding-bottom: 25px;
+    }
   }
 
   &__description {
@@ -97,6 +136,10 @@
   font-size: 18px;
   font-weight: 700;
   text-transform: none;
+
+  @include max-w($screen-sm){
+    font-size: 15px;
+  }
 }
 
 
@@ -119,6 +162,13 @@
   padding-left: 25px;
   min-height: 837px;
   font-style: normal;
+
+  @include max-w($screen-md) {
+    max-width: 100%;
+    padding-bottom: 25px;
+    min-height: 0;
+  }
+
 
   >p{
     font-weight: 700;
@@ -176,6 +226,11 @@
   margin-top: -85px;
   padding-bottom: 65px;
 
+  @include max-w($screen-md){
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+
   .inner-blocks{
     display: block;
   }
@@ -186,6 +241,11 @@
   max-width: 612px;
   background-color: #bfbfbf;
   margin-left: auto;
+
+  @include max-w($screen-lg){
+    padding: 25px;
+    width: 100%;
+  }
 
   .icon-q{
     display: block;
@@ -207,5 +267,13 @@
     color: black;
     text-transform: uppercase;
     font-style: normal;
+  }
+}
+
+.contact-information {
+  .address{
+    @include max-w($screen-md){
+      margin:0 auto 15px 0;
+    }
   }
 }

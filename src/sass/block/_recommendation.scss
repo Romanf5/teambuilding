@@ -19,6 +19,16 @@
     line-height: 29.41px;
     margin-bottom: 20px;
 
+    @include max-w($screen-xl) {
+      font-size: 20px;
+      line-height: 25px;
+    }
+
+    @include max-w($screen-sm) {
+      font-size: 18px;
+      line-height: 21px;
+    }
+
     &--all{
       color: $darken-color;
     }
@@ -30,6 +40,14 @@
     color: $decoration-color;
     font-size: 18px;
     text-transform: uppercase;
+
+    @include max-w($font-size){
+      font-size: 16px;
+    }
+
+    @include max-w($screen-sm) {
+      font-size: 15px;
+    }
   }
 }
 
@@ -37,6 +55,22 @@
 #recommendation-slider{
   padding-top: 165px;
   padding-bottom: 255px;
+
+  @include max-w($screen-xxxl){
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+
+  @include max-w($screen-xl){
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  @include max-w($screen-lg){
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   .slick-slide{
     text-align: center;
   }

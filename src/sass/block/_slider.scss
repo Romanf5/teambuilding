@@ -12,18 +12,95 @@
   &__img {
     &--start-film {
       max-width: 520px;
+
+      @include max-w($screen-xxl){
+        max-width: 400px;
+      }
+
+      @include max-w($screen-xl){
+        max-width: 300px;
+      }
+
+      @include max-w($screen-md){
+        margin: 0 auto;
+      }
+
+      @include max-w($screen-sm) {
+        max-width: 200px;
+
+      }
     }
 
     &--oskar{
       max-width: 540px;
+      @include max-w($screen-xxl){
+        max-width: 400px;
+      }
+
+      @include max-w($screen-xl){
+        max-width: 300px;
+      }
+
+      @include max-w($screen-md){
+        max-width: 275px;
+        margin: 0 auto;
+      }
+
+      @include max-w($screen-sm) {
+        max-width: 200px;
+      }
+    }
+
+    &--chair{
+      @include max-w($screen-xxl){
+        max-width: 400px;
+      }
+
+      @include max-w($screen-xl){
+        max-width: 300px;
+      }
+
+      @include max-w($screen-md) {
+        max-width: 275px;
+        margin: 0 auto;
+      }
+
+      @include max-w($screen-sm) {
+        max-width: 200px;
+      }
     }
   }
 
   &__content {
     max-width: 665px;
 
+    @include max-w($screen-xl){
+      max-width: 535px;
+    }
+
+    @include max-w($screen-lg){
+      max-width: 405px;
+    }
+
+    @include max-w($screen-md) {
+      text-align: center;
+      margin: 0 auto;
+    }
+
     &--content-3 {
       max-width: 725px;
+
+      @include max-w($screen-xxl){
+        max-width: 585px;
+      }
+
+      @include max-w($screen-xl) {
+        max-width: 440px;
+      }
+
+      @include max-w($screen-lg){
+        max-width: 405px;
+      }
     }
   }
 
@@ -31,9 +108,29 @@
     font-size: 75px;
     margin-bottom: 18px;
 
+    @include max-w($screen-xxxl){
+      font-size: 55px;
+    }
+
+    @include max-w($screen-xxl){
+      font-size: 50px;
+    }
+
+    @include max-w($screen-xl){
+      font-size: 45px;
+    }
+
+    @include max-w($screen-md) {
+      font-size: 25px;
+    }
+
     &--title-2 {
       max-width: 453px;
       margin-top: 113px;
+
+      @include max-w($screen-xl) {
+        margin-top: 0;
+      }
     }
 
   }
@@ -47,6 +144,23 @@
     margin-top: 0;
     line-height: 32.16px;
 
+    @include max-w($screen-xxxl){
+      font-size: 25px;
+    }
+
+    @include max-w($screen-xxl){
+      font-size: 22px;
+    }
+
+    @include max-w($screen-xl){
+      font-size: 20px;
+    }
+
+    @include max-w($screen-md){
+      font-size: 18px;
+      line-height: 20px;
+    }
+
     &--description-2 {
       max-width: 530px;
     }
@@ -58,10 +172,32 @@
 
   &--slide-2 {
     max-width: 1205px;
+
+    @include max-w($screen-xxxl){
+      padding-left: 100px;
+    }
+
+    @include max-w($screen-xxl){
+      padding-right: 100px;
+    }
+
+    @include max-w($screen-xl){
+      padding-right: 0;
+      padding-left: 0;
+    }
   }
 
   &--slide-3 {
     max-width: 1315px;
+
+    @include max-w($screen-xxl){
+      padding-right: 50px;
+      padding-left: 50px;
+    }
+
+    @include max-w($screen-lg){
+      padding: 0;
+    }
   }
 }
 
@@ -85,6 +221,14 @@
     bottom: 45px;
     transform: translateX(-50%);
 
+    @include max-w($screen-xxxl){
+      bottom: 70px;
+    }
+
+    @include max-w($screen-xl){
+      bottom: 25px;
+    }
+
 
     >li{
       display: inline-block;
@@ -96,6 +240,11 @@
       border-radius: 50%;
       cursor: pointer;
       transition: 0.5s;
+
+      @include max-w($screen-xl){
+        width: 20px;
+        height: 20px;
+      }
 
       &:last-of-type{
         margin-right: 0;
@@ -131,10 +280,20 @@
     padding-left: 30px;
     position: relative;
     min-height: 410px;
+
+    @include max-w($screen-md){
+      max-width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
 
   &__img{
     max-width: 330px;
+
+    @include max-w($screen-md){
+      max-width: 100%;
+    }
 
     img{
       width: 100%;
@@ -158,6 +317,12 @@
     border-radius: 50%;
     cursor: pointer;
     transition: 0.5s;
+
+    @include max-w($screen-xl){
+      width: 20px;
+      height: 20px;
+    }
+
     &:last-of-type{
       margin-right: 0;
     }

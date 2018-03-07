@@ -13,6 +13,10 @@
   padding-right: 13px;
   margin-bottom: 25px;
 
+  @include max-w($screen-md){
+    width: 100%;
+  }
+
   &:after{
     content: '';
     display: block;

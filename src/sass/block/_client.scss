@@ -2,6 +2,15 @@
   background-color: $decoration-color;
   padding-top: 77px;
   padding-bottom: 124px;
+
+  @include max-w($screen-xl){
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @include max-w($screen-sm){
+    padding-bottom: 0;
+  }
 }
 
 .client{
@@ -11,9 +20,24 @@
   justify-content: space-between;
   align-items: center;
 
+
   &__item{
     width: 211px;
     margin-bottom: 60px;
     text-align: center;
+
+    @include max-w($screen-lg){
+      width: 135px;
+    }
+
+    @include max-w($screen-md) {
+      width: 50%;
+    }
+
+    i{
+      display: block;
+      width: 80%;
+      margin: 0 auto;
+    }
   }
 }
