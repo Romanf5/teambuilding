@@ -52,6 +52,11 @@
     padding: 40px 35px 40px 43px;
     min-height: 268px;
     background: none;
+
+    @include max-w($screen-lg) {
+      padding: 25px;
+      min-height: 230px;
+    }
   }
 
   &--preview-video{
