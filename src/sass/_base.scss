@@ -181,7 +181,7 @@ section {
   padding-top: 70px;
 
   @include max-w($screen-md){
-    padding-top: 30px;
+    padding-top: 0;
   }
 }
 

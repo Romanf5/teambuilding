@@ -83,7 +83,13 @@ $(document).ready(function () {
 
     humburgBtn.on('click', triggerMenu);
 
-    $(window).on('load resize',reset)
+    $(window).on('load resize',reset);
+
+    $('.lazy').lazy({
+      effect: "fadeIn",
+      effectTime: 2000,
+      threshold: 0
+    });
   }
 
   function triggerMenu () {

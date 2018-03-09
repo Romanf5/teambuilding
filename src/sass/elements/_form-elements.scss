@@ -20,3 +20,44 @@ select {
   margin-top: 8px;
   margin-bottom: 12px;
 }
+
+
+.contact-form{
+  width: 100%;
+  text-align: center;
+
+  label{
+    display: block;
+  }
+
+  input,
+  textarea {
+    padding: 8px;
+    border: none;
+
+    &:focus::placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+  }
+
+  textarea {
+    resize: none;
+    min-height: 150px;
+  }
+
+  .send-btn {
+    display: inline-block;
+    border: none;
+    background-color: #020a10;
+    color: white;
+    width: 150px;
+    padding: 15px 0;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-size: 700;
+
+    &:hover{
+      background-color: #fff;
+      color: #020a10;
+    }
+  }
+}
