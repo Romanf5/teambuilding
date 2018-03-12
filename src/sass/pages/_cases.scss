@@ -18,6 +18,11 @@
   margin-bottom: 83px;
   position: relative;
 
+  &__img {
+    display: inline-block;
+    width: 100%;
+  }
+
   @include max-w($screen-xl){
     width: 33.33%;
     padding-left: 15px;
