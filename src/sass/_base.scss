@@ -243,6 +243,19 @@ section {
   }
 }
 
+
+#main-wrp{
+  padding-top: 108px;
+
+  @include max-w($screen-xxxl) {
+    padding-top: 94px;
+  }
+
+  @include max-w($screen-md) {
+    padding-top: 78px;
+  }
+}
+
 //JS
 
 .page-header.sticky{

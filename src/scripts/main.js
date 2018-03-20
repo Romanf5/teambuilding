@@ -75,11 +75,11 @@ $(document).ready(function () {
       pauseOnHover: true,
     });
 
-    $(window).on('load resize', function () {
+    /*$(window).on('load resize', function () {
       var headerHaight = header.innerHeight();
       var mainWrp = $('#main-wrp');
       mainWrp.css('padding-top', headerHaight);
-    });
+    });*/
 
     humburgBtn.on('click', triggerMenu);
 
